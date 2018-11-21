@@ -201,4 +201,22 @@ print(s[0][0][0])
 
 s ="I love to write python"
 
+split_s=split.s()
+
+for word in split_s:
+    if word.lower().find("i") > -1:
+        print(f"I found 'i' in {word}")
+
+#activity 3
+
+something = "completely different"
+print(dir(something))
+something.count("t")
+something.find("plete")
+
+something.split("e")
+
+thing2 = something.replace("different","silly")
+something[0] = "B"
+
 
