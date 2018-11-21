@@ -131,6 +131,74 @@ for(count,item) in enumerate(mylist):
 (first,middle,last)=mylast
 (middle,last,first)=(first,middle,last)
 
+#Exercise 5 input and output
+#activity 1
 
+with open("weather.csv",'r') as reader:
+    data = reader.read()
+
+print(data)
+
+#activity 2
+
+with open("weather.csv) as reader:
+    line = reader.readline()
+    while line:
+        print(line)
+        line = reader.readline()
+
+print("It's Over")
+
+~# activity 3
+
+with open("weather.csv") as reader:
+    line = reader.readline()
+    rain=[]
+    for line in reader.readlines():
+        r = line.strip().split(",")[-1]
+        r = float(r)
+        rain.append(r)
+
+print(rain)
+
+with open("myrain.txt","w") as writer:
+    for r in rain:
+         writer.write(str(r) + "\n")
+
+#activty 4
+
+import struct
+bin_data = struct.pack("bbbb", 123, 12, 45, 34)
+
+with open("mybinary.dat", "wb") as bwriter:
+    writer.write(bin_data)
+
+with open("mybinary.dat", "rb") as breader:
+    bin_data2 = breader.read()
+
+data = struct.unpack("bbbb", bin_data2)
+print(data)
+
+
+#exercise 6 strings
+
+#activity 1
+
+s = "I love to write python"
+for letter in s:
+    print(letter)
+
+s[4]
+s[-1]
+
+print(len(s))
+
+print(s[0])
+print(s[0][0])
+print(s[0][0][0])
+
+#activity 2
+
+s ="I love to write python"
 
 
