@@ -260,6 +260,46 @@ calc_hypo("hi","bye")
 calc_hypo(6,7)
 
 
+#Exercise 10 sets and dictionaries
+
+#activity 1
+
+a = {0, 1, 2, 3, 4, 5}
+b = {2, 4, 6, 8}
+
+a|b
+a.union(b) 
+
+~#same syntax
+
+a.intersection(b)
+
+
+#activity 2
+
+band = ["mel", "geri", "victoria", "mel", "emma"]
+
+counts={}
+
+for name in band:
+    if name not in counts:
+        counts[name]=1
+    else:
+        counts[name] += 1
+
+print(name, counts[name])
+
+
+#activity 3
+
+d={"maggie" : "uk", "ronnie" : "usa"}
+dir(d)
+d.items()
+for(person,place) in d.items():
+    print("{0} is from the {1}".format(person,place))
+
+
+
 
 
 
