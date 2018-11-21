@@ -219,4 +219,49 @@ something.split("e")
 thing2 = something.replace("different","silly")
 something[0] = "B"
 
+# Exercise 8 funciton
+
+#activity 1
+def double_it(number):
+    answer=2*number
+    return answer
+
+a=double_it(2)
+b=double_it(2.0)
+c=double_it("2")
+
+#activity 2
+
+def calc_hypo(a,b):
+    hypo = (a**2 + b**2)**0.5
+    return hypo
+
+a=3
+b=4
+
+print(calc_hyp(a,b))
+
+#activity 3
+
+def calc_hypo(a,b):
+    if type(a) not in (int, float) or type(b) not in (int,float):
+        print("Bad argument")
+        return False
+    if a <=0 or b <=0:
+        print("Bad argument")
+        return False
+    hypo = (a**2 + b**2)**0.5
+    return hypo
+
+calc_hypo(0,-2)
+
+calc_hypo("hi","bye")
+
+calc_hypo(6,7)
+
+
+
+
+
+
 
