@@ -294,20 +294,16 @@ print(name, counts[name])
 
 d={"maggie" : "uk", "ronnie" : "usa"}
 dir(d)
-print(d.items())
+d.items()
 for(person,place) in d.items():
     print("{0} is from the {1}".format(person,place))
 
-print(d.items())
-print(d.keys())
-print(d.values())
+print d.items()
+print d.keys()
+print d.values()
 
 d.get("maggie", "nowhere")
 
-d.get("ringo","nowhere")
-
-res = d.setdefault("mikhail","ussr")
-print(res, d["mikhail"])
 
 
 
