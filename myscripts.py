@@ -298,6 +298,14 @@ d.items()
 for(person,place) in d.items():
     print("{0} is from the {1}".format(person,place))
 
+print d.items()
+print d.keys()
+print d.values()
+
+d.get("maggie", "nowhere")
+
+
+
 
 
 
